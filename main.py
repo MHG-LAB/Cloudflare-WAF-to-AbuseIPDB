@@ -56,7 +56,20 @@ PAYLOAD={
     "filter": {
       "datetime_geq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*24)),
       "datetime_leq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime()),
-      "OR":[{"action": "block"}, {"action": "managed_challenge"}],
+      # "OR":[{"action": "block"}, {"action": "managed_challenge"}, {"action": "jschallenge"}],
+      "AND":[
+          {"action_neq": "allow"},
+          {"action_neq": "challenge_solved"},
+          {"action_neq": "challenge_failed"},
+          {"action_neq": "challenge_bypassed"},
+          {"action_neq": "jschallenge_solved"},
+          {"action_neq": "jschallenge_failed"},
+          {"action_neq": "jschallenge_bypassed"},
+          {"action_neq": "managed_challenge_skipped"},
+          {"action_neq": "managed_challenge_non_interactive_solved"},
+          {"action_neq": "managed_challenge_interactive_solved"},
+          {"action_neq": "managed_challenge_bypassed"},
+      ]
     }
   }
 }
