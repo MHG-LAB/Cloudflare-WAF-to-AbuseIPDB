@@ -20,6 +20,8 @@ Actions 环境变量：
 
 Cloudflare 的 API 不知道什么时候做了更改，找到文档时发现 PAYLOAD 需要使用 Graphql....
 
+如果 IP 有误伤，请联系我添加白名单！
+
 ## Support
 
 [AbuseIPDB](https://www.abuseipdb.com/) : AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks
