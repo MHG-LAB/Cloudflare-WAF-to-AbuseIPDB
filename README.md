@@ -26,7 +26,7 @@ Cloudflare 的 API 不知道什么时候做了更改，找到文档时发现 PAY
 
 [AbuseIPDB-to-Cloudflare-WAF](https://github.com/MHG-LAB/AbuseIPDB-to-Cloudflare-WAF)
 
-或许可以构建反馈系统？
+或许可以构建反馈调节系统？
 
 ## Support
 
