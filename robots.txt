@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /administrator/bot-trap/index.php
+Disallow: /login/
 
 # Please don't try to locate and access my /bot-trap, as your IP address will be locked out immediately...
 # 请不要尝试定位和访问我的 /bot-trap，因为您的 IP 地址将立即被锁定...
