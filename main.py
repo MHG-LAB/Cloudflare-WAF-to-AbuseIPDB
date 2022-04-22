@@ -54,8 +54,8 @@ PAYLOAD={
   "variables": {
     "zoneTag": CLOUDFLARE_ZONE_ID,
     "filter": {
-      "datetime_geq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*2.5)),
-      "datetime_leq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime()),
+      "datetime_geq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*8-60*60*2.5)),
+      "datetime_leq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*8)),
       # "OR":[{"action": "block"}, {"action": "managed_challenge"}, {"action": "jschallenge"}],
       "AND":[
           {"action_neq": "allow"},
@@ -121,6 +121,8 @@ def report_bad_ip(it):
 excepted_ruleId = ["fa01280809254f82978e827892db4e46"]
 
 print("==================== Start ====================")
+print(str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+print(str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()-60*60*8))))
 a=get_blocked_ip()
 print(str(type(a)))
 if str(type(a)) == "<class 'dict'>" and len(a)>0:
