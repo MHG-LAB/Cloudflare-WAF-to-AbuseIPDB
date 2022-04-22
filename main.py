@@ -54,7 +54,7 @@ PAYLOAD={
   "variables": {
     "zoneTag": CLOUDFLARE_ZONE_ID,
     "filter": {
-      "datetime_geq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*24)),
+      "datetime_geq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime(time.time()-60*60*2.5)),
       "datetime_leq": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.localtime()),
       # "OR":[{"action": "block"}, {"action": "managed_challenge"}, {"action": "jschallenge"}],
       "AND":[
