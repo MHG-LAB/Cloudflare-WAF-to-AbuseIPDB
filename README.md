@@ -25,7 +25,6 @@ Actions 环境变量：
 例如这些：
 
 - https://abuseipdb.mhuig.top/robots.txt
-- https://abuseipdb.mhuig.top/.env
 - https://abuseipdb.mhuig.top/phpinfo.php
 - https://abuseipdb.mhuig.top/wp-login.php
 - https://abuseipdb.mhuig.top/../../../../../../../etc/passwd
