@@ -1,5 +1,9 @@
 # Cloudflare WAF to AbuseIPDB
 
+## 这是什么？
+
+我也不知道
+
 ## 它可以干嘛
 
 从 Cloudflare Graphql API 获取被 Cloudflare WAF 拦截(阻止/托管质询)的 IP 并提交给 AbuseIPDB
@@ -13,6 +17,19 @@ Actions 环境变量：
 - `CLOUDFLARE_API_KEY`: Cloudflare API Key
 - `CLOUDFLARE_EMAIL`: Cloudflare Email
 - `ABUSEIPDB_API_KEY`: AbuseIPDB API Key
+
+## 这些奇奇怪怪的文件是什么？
+
+有人经常访问这些，然而我这里又没有这些文件，于是我创建了他们。
+
+例如这些：
+
+- https://abuseipdb.mhuig.top/robots.txt
+- https://abuseipdb.mhuig.top/.env
+- https://abuseipdb.mhuig.top/phpinfo.php
+- https://abuseipdb.mhuig.top/wp-login.php
+- https://abuseipdb.mhuig.top/../../../../../../../etc/passwd
+- etc.
 
 ## 吐槽
 
